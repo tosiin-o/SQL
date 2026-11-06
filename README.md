@@ -74,4 +74,16 @@ Gained understanding of:
 
 Used aggregate functions to summarise business data:
 
+select *
+from customers
+where country IN ('USA', 'UK');
+
+select
+products.productid,
+products.productname,
+categories.categoryname
+from products
+inner join categories
+on products.categoryid = categories.categoryid;
+
 - `
